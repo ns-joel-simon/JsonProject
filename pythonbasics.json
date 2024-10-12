@@ -1,0 +1,114 @@
+{
+  "python": {
+    "syllabus": [
+      [
+        {
+          "Title": "Data Types"
+        },
+        {
+          "Description": "Values' types (e.g., int, float, char, bool, string)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Variables"
+        },
+        {
+          "Description": "Store data values (e.g., x = 5)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Arrays"
+        },
+        {
+          "Description": "Collections of same-type values (e.g., [1, 2, 3])"
+        }
+
+      ],
+      [
+        {
+          "Title": "Conditional Statements"
+        },
+        {
+          "Description": "Execute code based on conditions (if/else, switch)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Looping Statements"
+        },
+        {
+          "Description": "Repeat code execution (for, while, do-while)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Functions"
+        },
+        {
+          "Description": "Reusable code blocks (take args, return values)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Class & Objects"
+        },
+        {
+          "Description": "Blueprint/template (class) & instances (objects)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Access Specifiers"
+        },
+        {
+          "Description": "Control access (public, private, protected)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Inheritance & Interface"
+        },
+        {
+          "Description": "Child class inherits parent's properties (extends, implements)"
+        }
+
+      ],
+      [
+        {
+          "Title": "Overloading"
+        },
+        {
+          "Description": "Multiple functions with same name, different params"
+        }
+
+      ],
+      [
+        {
+          "Title": "Overriding"
+        },
+        {
+          "Description": "Child class replaces parent's method"
+        }
+
+      ],
+      [
+        {
+          "Title": "Exception Handling"
+        },
+        {
+          "Description": "Manage runtime errors (try/catch/throw)"
+        }
+
+      ]
+    ]
+  }
+}
