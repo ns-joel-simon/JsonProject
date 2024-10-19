@@ -1,114 +1,623 @@
 {
-  "python": {
-    "syllabus": [
-      [
+  "course_id": "ES01",
+  "course_name": "Programming basics with Python",
+  "author": "Yuvaraj Neelagandan",
+  "course_description": "Why Python ? \n Ease of Learning and Use: Python has a simple, readable syntax that closely resembles English, making it an ideal language for beginners and allowing rapid development.\nVersatility: Python is a general-purpose language that can be used for web development, data science, automation, AI, machine learning, and more, offering a wide range of libraries and frameworks.\nLarge Community and Support: Python has a vast, active community that contributes to an extensive ecosystem of third-party packages, tutorials, and forums, ensuring help and resources are easily available.\nCross-Platform Compatibility: Python is platform-independent, meaning code written in Python can run on various operating systems (Windows, macOS, Linux), providing flexibility across different environments.\n\n",
+  "syllabus": [
+    {
+      "topic_name": "Data types",
+      "description": [
         {
-          "Title": "Data Types"
+          "data": "A data type is a classification of data that tells the compiler or interpreter how the programmer intends to use the data. It defines the type of value a variable can store, such as integers, floating-point numbers, or strings.\nIn Python, data types are dynamically inferred, meaning variables do not need to be explicitly declared with their data type. Python supports various built-in data types.\n\n"
         },
         {
-          "Description": "Values' types (e.g., int, float, char, bool, string)"
+          "data": "Python Data Types:\nNumeric Types:\nint: Integer numbers (e.g., 1, 42, 1000)\nfloat: Floating-point numbers (e.g., 3.14, 0.001)\ncomplex: Complex numbers (e.g., 1+2j, 3+4j)\nSequence Types:\nstr: Strings (e.g., \"Hello, World!\", 'Python')\nlist: Ordered, mutable collections (e.g., [1, 2, 3], [\"a\", \"b\", \"c\"])\ntuple: Ordered, immutable collections (e.g., (1, 2, 3), (\"a\", \"b\", \"c\"))\nrange: Represents a sequence of numbers (e.g., range(0, 10))\nMapping Type:\ndict: Dictionary, a collection of key-value pairs (e.g., {\"name\": \"Alice\", \"age\": 30})\nSet Types:\nset: Unordered collection of unique elements (e.g., {1, 2, 3}, {\"apple\", \"banana\"})\nfrozenset: Immutable version of a set (e.g., frozenset([1, 2, 3]))\n\n"
+        },
+        {
+          "data": "\nBoolean Type:\nbool: Represents True or False.\nBinary Types:\nbytes: Immutable sequences of bytes (e.g., b\"hello\")\nbytearray: Mutable sequence of bytes (e.g., bytearray(b\"hello\"))\nmemoryview: A memory view object (e.g., memoryview(b\"hello\"))\nNone Type:\nNone: Represents the absence of a value or a null value (e.g., None)\n\n"
+        },
+        {
+          "is_image": true,
+          "data": "Sample",
+          "data_url": "<image url>"
         }
-
-      ],
-      [
+      ]
+    },
+    {
+      "topic_name": "Variables",
+      "description": [
         {
-          "Title": "Variables"
+          "data":"A variable is a named location in memory used to store data that can be  manipulated or referenced throughout a program. Variables allow  programmers to store, retrieve, and modify data. \nIn Python, variables are dynamically typed, meaning you don't need to declare  the data type explicitly. Python automatically assigns a data type to the  variable based on the value you assign to it. Variable names must follow  specific rules and conventions.\n"
         },
         {
-          "Description": "Store data values (e.g., x = 5)"
+          "is_image": true,
+          "data": "Variable Declaration ",
+          "caption": "In Python, a variable is created when a value is assigned to it. \nSyntax: variable_name = value",
+          "data_url": "<image url>"
+        },
+        {
+          "title": "Rules for Python Variable Names",
+          "data": "Must start with a letter (A-Z or a-z) or an underscore (_). \nCannot start with a number. \nCan only contain alphanumeric characters (A-Z, a-z, 0-9) and underscores (_). Case-sensitive: name, Name, and NAME are different variables. \nCannot be a Python keyword (e.g., if, while, for, class, try, etc.)."
+        },
+        {
+          "is_image": true,
+          "data_url": "<image url>"
+        },
+        {
+          "title": "Variable Types in Python",
+          "data": "Python variables can hold different types of values, and the type is determined dynamically. Below are some common variable types: \n● int: Holds integer values (e.g., x = 10) \n● float: Holds floating-point values (e.g., y = 3.14) \n● str: Holds string values (e.g., name = \"Alice\") \n● bool: Holds boolean values (True or False)\n"
+        },
+        {
+          "is_image": true,
+          "title": "Changing the Value of a Variable",
+          "data": "You can reassign a variable to a new value, and its type will change dynamically based on the new value.",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "Variable Scope ",
+          "data": "Global variables: Declared outside of functions and accessible throughout the program. \nLocal variables: Declared inside functions and only accessible within that function.",
+          "data_url": "<image url>"
         }
-
-      ],
-      [
+      ]
+    },
+    {
+      "topic_name": "Arrays ",
+      "description": [
         {
-          "Title": "Arrays"
+          "data": "An array is a data structure used to store a collection of elements (values), typically of the same data type, in a contiguous block of  memory. Arrays allow for efficient access to elements based on their index. \n"
         },
         {
-          "Description": "Collections of same-type values (e.g., [1, 2, 3])"
-        }
-
-      ],
-      [
-        {
-          "Title": "Conditional Statements"
+          "title": "Arrays in Python ",
+          "data": "Python does not have a built-in array data structure like some other languages (e.g., C, Java), but arrays can be represented using: \n1. Lists (most commonly used) \n2. array module for more array-like behavior \n3. NumPy arrays for numerical computing (when working with large datasets and mathematical operations)\n"
         },
         {
-          "Description": "Execute code based on conditions (if/else, switch)"
-        }
-
-      ],
-      [
-        {
-          "Title": "Looping Statements"
+          "is_image": true,
+          "title": "Using Lists as Arrays",
+          "data": "In Python, lists are often used as arrays. They are flexible, can hold elements of any data type, and can be dynamically resized. \n",
+          "data_url": "<image url>"
         },
         {
-          "Description": "Repeat code execution (for, while, do-while)"
-        }
-
-      ],
-      [
-        {
-          "Title": "Functions"
+          "is_image": true,
+          "title": "Using the ‘array’ module",
+          "data": "If you specifically need an array that holds elements of the same data type (like arrays in other languages), you can use the array module. \nHere 'i' is the type code for an integer.\n",
+          "data_url": "<image url>"
         },
         {
-          "Description": "Reusable code blocks (take args, return values)"
-        }
-
-      ],
-      [
-        {
-          "Title": "Class & Objects"
+          "is_image": true,
+          "title": "Using NumPy Arrays",
+          "data": "For scientific computing and handling large datasets, the NumPy library is preferred. NumPy arrays are more efficient and support a  variety of mathematical operations.",
+          "data_url": "<image url>"
         },
         {
-          "Description": "Blueprint/template (class) & instances (objects)"
-        }
-
-      ],
-      [
-        {
-          "Title": "Access Specifiers"
+          "title": "Key Differences Between Lists and Arrays in Python \n",
+          "data": "Lists: Can hold elements of different data types, are dynamic, and can grow in size. \nArray Module: Requires elements to be of the same type and is closer to arrays in other programming languages. NumPy Arrays: Highly optimized for numerical computations and scientific data processing. \nOperations on Arrays: \n1. Accessing Elements: Use indexing to access elements (arr[0], arr[1], etc.). \n2. Modifying Elements: Change the value at a particular index (arr[1] = 100). \n3. Appending: Add elements to the array (arr.append(10)). \n4. Deleting: Remove elements from the array (arr.remove(3)).\n"
         },
         {
-          "Description": "Control access (public, private, protected)"
-        }
+           "is_image": true,
+          "title": "Multi dimensional Arrays",
+          "data": "A multidimensional array is an array of arrays. In Python, lists are commonly used to represent arrays, and you can create lists within  lists to represent multidimensional arrays. These are useful for working with matrix data, tables, or any structured data involving  multiple dimensions (rows and columns). ",
+          "data_url": "<image url>",
+          "description": [
+            {
+              "is_image": true,
+              "title": "2D Arrays (Matrices):\n ",
+              "data": "A 2D array is like a table with rows and columns\n.",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "3D Arrays:\n",
+              "data": "A 3D array can be thought of as a collection of 2D arrays stacked on top of each other.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "3D Arrays:\n",
+              "data": "A 3D array can be thought of as a collection of 2D arrays stacked on top of each other.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "Operations on Multidimensional Arrays: \n",
+              "data": "You can perform various operations such as accessing elements, updating elements, and iterating over multidimensional arrays. Accessing elements: \nYou can access individual elements of a multidimensional array using multiple indices.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "Updating elements:  \n",
+              "data": "You can update elements by specifying the indices.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title":"Using Libraries for Multidimensional Arrays: \n",
+              "data": "While Python's built-in lists can be used for multidimensional arrays, libraries like NumPy provide more efficient and flexible ways to  handle arrays.\n",
+              "data_url": "<image url>"
 
-      ],
-      [
-        {
-          "Title": "Inheritance & Interface"
-        },
-        {
-          "Description": "Child class inherits parent's properties (extends, implements)"
-        }
-
-      ],
-      [
-        {
-          "Title": "Overloading"
-        },
-        {
-          "Description": "Multiple functions with same name, different params"
-        }
-
-      ],
-      [
-        {
-          "Title": "Overriding"
-        },
-        {
-          "Description": "Child class replaces parent's method"
-        }
-
-      ],
-      [
-        {
-          "Title": "Exception Handling"
-        },
-        {
-          "Description": "Manage runtime errors (try/catch/throw)"
+            }
+          ]
         }
 
       ]
-    ]
-  }
+    },
+    {
+      "topic_name": "Condition Statements in Python",
+      "description":[
+        {
+          "data": "Conditional statements are used to perform different actions based on whether a specified condition evaluates to True or False. They  control the flow of execution in a program based on conditions. \nTypes of Conditional Statements: \n1. if statement \n2. if-else statement \n3. if-elif-else statement \n4. Nested if statements\n"
+        },
+        {
+          "is_image": true,
+          "title": "‘If’ Statement \n",
+          "data": "The if statement checks a condition, and if the condition is True, the block of code inside the if is executed.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "‘If-else’ Statement \n",
+          "data": "The if-else statement provides an alternative action if the if condition is False. If the condition is True, the code inside if is  executed; otherwise, the code inside else is executed.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title":"‘If-else-If’ Statement \n",
+          "data": "The if-elif-else statement is used when there are multiple conditions. It checks each condition in sequence until one of them  evaluates to True. If none of the conditions are True, the else block is executed.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title":"‘Nested-If’ Statement \n",
+          "data": "You can nest if statements within other if statements to check multiple conditions. This is known as a nested \n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "Conditional Expressions (Ternary Operator) \n",
+          "data": "Python also has a shorter way to write if-else conditions using a conditional expression (also called a ternary operator).\n",
+          "data_url": "<image url>"
+        }
+      ]
+    },
+    {
+      "topic_name": "Looping Statements in Python \n",
+      "description": [
+        {
+          "data": "Looping statements allow you to execute a block of code repeatedly, either a specified number of times or until a condition is met. Python provides  different types of loops to handle iteration. \nTypes of Loops in Python: \n1. for loop \n2. while loop \n3. Nested loops \nAdditionally, loops can be controlled using: \n● break: Exits the loop prematurely. \n● continue: Skips the current iteration and moves to the next iteration. \n● pass: Does nothing and is a placeholder for future code.\n"
+        },
+        {
+          "is_image": true,
+          "title": "For Loop \n",
+          "data": "The for loop is used for iterating over a sequence (e.g., a list, tuple, dictionary, set, or string).\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "While Loop \n",
+          "data": "The while loop continues executing the block of code as long as the condition is True.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "Nested Loop \n",
+          "data": "You can place one loop inside another loop. This is useful when you want to iterate over multi-dimensional data structures like lists of  lists.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "Loop Control Statements \n",
+          "data": "break Statement: \n Exits the loop before it has looped through all items.\n",
+          "data_url": "<image url>"
+        }
+      ]
+    },
+    {
+      "topic_name": " Functions in Python \n",
+      "description": [
+        {
+          "data": "A function is a block of reusable code that performs a specific task. Functions allow you to structure your code into logical blocks, making it easier  to read, maintain, and reuse. \nTypes of Functions in Python: \n1. Built-in functions: Functions provided by Python, e.g., print(), len(), sum(). \n2. User-defined functions: Functions created by the user to perform specific tasks. \n"
+        },
+        {
+          "is_image": true,
+          "title": "1. Defining a Function: \n",
+          "data": "You define a function using the def keyword, followed by the function name and parameters (optional). A function may or may not return a value.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "2. Calling a Function: \n",
+          "data": "To call a function, simply use the function name followed by parentheses and pass any required arguments. \n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "3. Function with No Parameters: \n",
+          "data": "A function may not require any parameters and still perform a task.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "4. Function with Default Parameters: \n",
+          "data": "You can assign default values to parameters. If no argument is passed, the default value is used.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "5. Function with Arbitrary Arguments: \n",
+          "data": "Sometimes you may want a function to accept a variable number of arguments. This can be done using *args (for positional  arguments) or **kwargs (for keyword arguments).\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "6. Return Statement: \n",
+          "data": "A function can return a value using the return statement. If a function doesn't return anything explicitly, it returns None by default.",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "7. Lambda Functions: \n",
+          "data": "Python also supports anonymous functions, called lambda functions. They are small, unnamed functions defined with the lambda keyword.\n\n\nIn Python, functions can be categorized based on the presence or absence of parameters and arguments. Here are the four  common types: \n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "1. Function with No Parameters and No Return Value \n",
+          "data": "This type of function neither accepts parameters nor returns a value. It performs a task internally without needing input.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "2. Function with Parameters and No Return Value \n",
+          "data": "This function accepts parameters (input values) but does not return any value. It performs operations using the given parameters.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "3. Function with No Parameters and a Return Value \n",
+          "data": "This type of function accepts parameters and returns a value after performing its operation.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "4. Function with Parameters and a Return Value \n",
+          "data": "This type of function accepts parameters and returns a value after performing its operation.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "title": "Additional Details on Parameters and Arguments: \n",
+          "description": [
+            {
+              "is_image": true,
+              "data": "1. Positional Arguments: Arguments passed in the same order as the parameters.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "data": "2. Default Arguments: Parameters with default values that are used if no argument is passed.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "data": "3. Arbitrary Arguments (*args): Used when a variable number of arguments is needed.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "data": "4. Keyword Arguments (**kwargs): Used when a variable number of named arguments is needed.\n",
+              "data_url": "<image url>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_name": "Class & Object \n",
+      "description": [
+        {
+          "data": "A class is a blueprint or a template for creating objects (instances). It defines a  set of attributes (data) and methods (functions) that the objects created from  the class will have. It represents the structure and behavior that the objects of  the class will follow. \nAn object is an instance of a class. When a class is defined, no memory is  allocated until an object is created. Objects are individual instances of the  class with their own unique values for the attributes defined in the class.\n"
+        },
+        {
+          "is_image": true,
+          "title": "Defining a Class in Python: \n",
+          "data": "Classes in Python are defined using the class keyword followed by the class name. The class typically contains methods (functions)  and attributes (variables).\n",
+          "data_url": "<image url>"
+        },
+        {
+          "data": "Key Components of a Class: \n",
+          "description": [
+            {
+              "is_image": true,
+              "data": "1. Attributes (Instance Variables): These are variables that hold data for an object. Each object has its own copy of these variables. \n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "data": "2 . Methods: Functions that operate on the attributes of the object. Methods are defined inside a class and are used to define the  behavior of objects.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "data": "3. Constructor (__init__ method): The constructor is a special method that is called when an object is created. It is typically used to  initialize the instance variables. \n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "data": "4. Self Parameter: The self parameter refers to the current instance of the class. It is used to access the instance variables and  methods from within the class.\n",
+              "data_url": "<image url>"
+            }
+          ]
+        },
+        {
+          "is_image": true,
+          "title": "Creating and Using Objects: \n",
+          "data": "● An object is created by calling the class name followed by parentheses and passing any required parameters. ● Once an object is created, you can access its attributes and call its methods. \n",
+           "data_url": "<image url>"
+        },
+        {
+          "title": "Class vs. Object: \n",
+          "data": "● Class: Blueprint for creating objects (defines the structure and behavior). \n● Object: An instance of a class, which holds actual data and can interact with methods defined in the class.\n"
+        }
+      ]
+    },
+    {
+      "topic_name": "Access Specifiers \n",
+      "description": [
+        {
+          "data": "Access specifiers (also known as access modifiers) define the visibility or accessibility of class members (attributes  and methods) to control how they can be accessed from outside the class. Python provides three types of access  specifiers: \n1. Public: Members are accessible from anywhere. \n2. Protected: Members are accessible within the class and by subclasses. \n3. Private: Members are accessible only within the class. \nUnlike some languages like Java or C++, Python doesn't enforce strict access control. Instead, it uses naming  conventions to signal intent for access control.\n"
+        },
+        {
+          "data": "Types of Access Specifiers: \n",
+          "description": [
+            {
+              "is_image": true,
+              "title": "1. Public Access: \n",
+              "data": "By default, all class members in Python are public, meaning they can be accessed from anywhere, both inside and outside the class.",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "2. Protected Access: \n",
+              "data": "Protected members are intended to be accessed only within the class and its subclasses. Python indicates a protected  member by prefixing it with a single underscore _. This is a convention; it doesn't prevent access but signals that it's  intended for internal use.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "3. Private Access: \n",
+              "data": "Private members are accessible only within the class where they are defined. In Python, this is indicated by prefixing  the member name with two underscores __. Python uses name mangling to make private members harder to access,  though it's still possible via a workaround.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "Accessing Private Members (Workaround): \n",
+              "data": "Although Python supports name mangling for private attributes, they can still be accessed using  _ClassName__attribute syntax, but this is discouraged. \n",
+              "data_url": "<image url>"
+            }
+          ]
+        },
+        {
+          "data": "Summary of Access Specifiers: \n",
+          "description": "1. Public: Accessible everywhere. Example: self.name \n2. Protected: Accessible within the class and its subclasses. Convention: _attribute \n3. Private: Accessible only within the class. Convention: __attribute\n"
+        }
+      ]
+    },
+    {
+      "topic_name": " Inheritance & Interface \n",
+      "description": [
+        {
+          "data": "Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to inherit attributes and  methods from another class. This promotes code reuse and establishes a relationship between classes. \nIn Python, inheritance is implemented by creating a child class (subclass) that derives from a parent class (superclass). The  child class can inherit or override the functionality of the parent class. \n"
+        },
+        {
+          "data": "Types of Inheritance: \n1. Single Inheritance: A child class inherits from one parent class. \n2. Multiple Inheritance: A child class inherits from more than one parent class. \n3. Multilevel Inheritance: A class inherits from another child class. \n4. Hierarchical Inheritance: Multiple child classes inherit from the same parent class.\n",
+          "description": [
+            {
+              "is_image": true,
+              "title": " 1. Single Inheritance: \n",
+              "data": "Single inheritance occurs when a class inherits from only one parent class. The child class inherits the properties and  methods of the single parent class.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "2. Multiple Inheritance: \n",
+              "data": "Multiple inheritance occurs when a class inherits from more than one parent class. This allows the child class to  inherit attributes and methods from all parent classes.\n",
+              "data_url": "<image url>"
+            },
+
+            {
+              "is_image": true,
+              "title": "3. Multilevel Inheritance: \n",
+              "data": "Multilevel inheritance is a type of inheritance where a class is derived from another class, which is also derived from  a base class. This creates a chain of inheritance with multiple levels.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "4. Hierarchical Inheritance: \n",
+              "data": "In hierarchical inheritance, multiple child classes inherit from a single parent class. Each child class can have its own  methods and properties while inheriting from the same parent class.\n",
+              "data_url": "<image url>"
+            },
+            {
+              "is_image": true,
+              "title": "5. Hybrid Inheritance: \n",
+              "data": "Hybrid inheritance is a combination of two or more types of inheritance, such as multiple and hierarchical  inheritance. It allows for flexibility in the inheritance hierarchy, as classes can inherit from multiple base classes and  can have various patterns of inheritance.Hybrid inheritance can be achieved by combining single, multilevel, and  \nhierarchical inheritance.\n",
+              "data_url": "<image url>"
+            }
+          ]
+        },
+        {
+          "data": "Key Notes \n",
+          "description": [
+            {
+              "data": "Single Inheritance involves one parent class and one child class. \n"
+            },
+            {
+              "data": "Multiple Inheritance allows a child class to inherit from multiple parent classes, enabling the child class to access  attributes and methods from all parent classes. \n"
+            },
+            {
+              "data": "Multilevel Inheritance: \n● Involves a chain of inheritance where a class is derived from another derived class. ● Creates multiple levels of inheritance. \n"
+            },
+            {
+              "data": "Hierarchical Inheritance: \n● Multiple child classes inherit from the same parent class. \n● Each child class can have its own properties and methods. \n"
+            },
+            {
+              "data": "Hybrid Inheritance: \n● A combination of multiple types of inheritance (such as multilevel, multiple, and hierarchical). ● Offers flexibility and combines different inheritance patterns in one structure.\n"
+            }
+          ]
+        },
+        {
+          "is_image": true,
+          "title": "Key Points in Inheritance: \n",
+          "data": "● Method Overriding: When a child class defines a method with the same name as in the parent class, it  overrides the parent class method. \n● super() Function: This function allows you to call the parent class's method from the child",
+          "data_url": "<image url>"
+        },
+        {
+          "title": "Interface in Python \n",
+          "data": "In Python, the concept of an interface is not explicitly defined as in some other programming languages like Java or  C#. However, similar functionality can be achieved using Abstract Base Classes (ABCs) from the abc module. An  interface specifies a set of methods that a class must implement, but does not provide any implementation itself. \n",
+          "description": [
+            {
+              "data": "Key Concepts: \n"
+            },
+            {
+              "data": "1. Abstract Base Class (ABC): This is a class that cannot be instantiated and typically contains one or more  abstract methods that must be implemented by derived classes. \n"
+            },
+            {
+              "data": "2. Abstract Method: A method declared in an ABC that has no implementation. Any subclass inheriting from  the ABC must implement this method.\n",
+              "description": [
+                {
+                  "is_image": true,
+                  "title": "Creating an Interface in Python: \n",
+                  "data": "To create an interface using an abstract base class: \n1. Import the ABC class and the abstractmethod decorator from the abc module. \n2. Define the abstract methods that need to be implemented by the subclasses.\n",
+                  "data_url": "<image url>"
+                }
+              ]
+            },
+            {
+              "title": "Key Points: \n",
+              "data": "● Abstract Base Class: The Shape class cannot be instantiated directly. \n● Abstract Methods: The area and perimeter methods are declared as abstract methods and must be  implemented in any subclass. \n● Implementation: The Rectangle and Circle classes provide specific implementations for the abstract methods  defined in the Shape class. \n"
+            },
+            {
+              "title": "Benefits of Using Interfaces: \n",
+              "data": "● Contractual Agreement: Interfaces provide a way to enforce a contract that subclasses must adhere to,  ensuring they implement specific methods. \n● Decoupling: They promote decoupling between classes, making code more modular and easier to maintain. ● Flexibility: Interfaces allow different classes to be interchangeable as long as they adhere to the same  interface.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_name": "Overloading & Overriding \n",
+      "description": [
+        {
+          "data": "Overloading and Overriding are two important concepts in object-oriented programming that deal with methods.  While they may sound similar, they serve different purposes. \n"
+        },
+        {
+          "is_image": true,
+          "title": "1. Overloading \n",
+          "data": "Method Overloading allows multiple methods to have the same name but with different parameters (different type  or number of parameters). However, Python does not support method overloading in the traditional sense as seen in  languages like Java or C++. In Python, you can achieve a similar effect using default arguments or variable-length  arguments.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "is_image": true,
+          "title": "2. Overriding \n",
+          "data": "Method Overriding occurs when a subclass provides a specific implementation of a method that is already defined  in its superclass. The overridden method in the child class has the same name and parameters as the method in the  parent class. This is used to modify or extend the behavior of the inherited method.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "title": "Key Differences: \n",
+          "description": [
+            {
+              "data": "● Overloading: \n○ Achieved by defining multiple methods with the same name but different parameters. ○ Not directly supported in Python but can be emulated using default parameters or *args and **kwargs. \n"
+            },
+            {
+              "data": " ● Overriding: \n○ Occurs when a subclass redefines a method from its superclass. \n○ Used to provide specific behavior for a method in a subclass.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_name": "Exception Handling \n",
+      "description": [
+        {
+          "data": "Exception handling is a critical aspect of programming that allows you to manage errors gracefully without crashing the  program. In Python, exceptions are raised when an error occurs, and you can use specific blocks of code to handle these  exceptions, ensuring that your program can respond appropriately. \n"
+        },
+        {
+          "is_image": true,
+          "title": "Key Concepts of Exception Handling: \n",
+          "data": "1. Try Block: The code that may cause an exception is placed inside the try block. \n2. Except Block: If an exception occurs, the code in the except block is executed to handle the error. 3. Finally Block: The code inside the finally block will execute regardless of whether an exception occurred or not. It is  often used for cleanup actions. \n4. Else Block: The else block can be used after the except block. It executes if the try block does not raise an exception.\n",
+          "data_url": "<image url>"
+        },
+        {
+          "title": "Exception Handling \n",
+          "description": [
+            {
+              "data": "● Try Block: The division operation is attempted within the try block. \n"
+            },
+            {
+              "data": "● Except Blocks: \n○ The first except handles the ZeroDivisionError if the second number is zero. \n○ The second except handles a TypeError if the provided inputs are not numbers. \n"
+            },
+            {
+              "data": "● Else Block: If no exceptions occur, it prints the result. \n"
+            },
+            {
+              "data": "● Finally Block: The finally block executes at the end to indicate completion of execution, regardless of whether an error  occurred. \n"
+            }
+          ]
+        },
+         {
+          "title": "Benefits of Exception Handling  \n",
+          "description": [
+            {
+              "data": "● Robustness: Helps create more reliable programs that can handle errors without crashing. \n"
+            },
+            {
+              "data": "● Error Management: Provides a systematic way to manage errors, making the code easier to read and maintain.\n"
+            },
+            {
+              "data": "● Separation of Error Handling Code: Allows you to separate normal logic from error-handling logic, leading to cleaner code.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_name": "One line Explanation for the topics\n",
+      "description": [
+        {
+          "data": "Data Types: Data types define the kind of value a variable can hold, such as integers, floats, strings, and booleans.\n"
+        },
+        {
+          "data": "Variables: Variables are named storage locations in memory that hold data values, allowing for dynamic\nmanipulation of information.\n"
+        },
+        {
+          "data": "Arrays: Arrays are collections of elements, typically of the same data type, stored in contiguous memory locations\nand accessed via indices.\n"
+        },
+        {
+          "data": "Condition Statements: Condition statements execute specific code blocks based on whether a given condition\nevaluates to true or false, enabling decision-making in programs.\n"
+        },
+        {
+          "data": "Looping Statements: Looping statements allow code to be executed repeatedly based on specified conditions, with\nconstructs like for and while loops.\n"
+        },
+        {
+          "data": "Functions: Functions are reusable blocks of code that perform a specific task and can take inputs (parameters) and return outputs\n(results).\n"
+        },
+        {
+          "data": "Class & Object: Classes are blueprints for creating objects, encapsulating data and methods, while objects are instances of classes that\nhold specific values.\n"
+        },
+        {
+          "data": "Access Specifiers: Access specifiers (like public, private, and protected) control the visibility and accessibility of class members\n(attributes and methods) in object-oriented programming.\n"
+        },
+        {
+          "data": "Inheritance & Interface: Inheritance allows a class to inherit attributes and methods from another class, while interfaces define a\ncontract for classes to implement specific methods without enforcing a particular structure.\n"
+        },
+        {
+          "data": "Overloading & Overriding: Overloading enables methods to have the same name with different signatures, while overriding allows a\nsubclass to provide a specific implementation of a method defined in its superclass.\n"
+        },
+        {
+          "data": "Exception Handling: Exception handling provides a structured approach to manage and respond to runtime errors in a program,\npreventing crashes and ensuring smoother execution.\n"
+        }
+      ]
+    },
+    {
+      "topic_name": "References\n",
+      "data": "Github - https://github.com/yuvaraj-neelagandan/ProgrammingBasics"
+    }
+  ]
 }
